@@ -88,8 +88,27 @@
 <footer>
   <p>© 2026 PetCare Guide – By Mohamed Amine Berkaya & Mohamed Mehdi Amri</p>
 </footer>
-
 </body>
+  <div id="chat-button" onclick="toggleChat()">
+    <img src="https://cdn-icons-png.flaticon.com/512/893/893257.png" alt="Support" width="30">
+</div>
+
+<div id="chat-window">
+    <div class="chat-header">
+        <div class="header-info">
+            <img src="https://cdn-icons-png.flaticon.com/512/194/194279.png" width="30">
+            <span>PetCare Support</span>
+        </div>
+        <button onclick="toggleChat()">×</button>
+    </div>
+    <div id="chat-body">
+        <div class="message bot-msg">Hey there! 🐾 I'm your PetCare Assistant. How can I help your pet today?</div>
+    </div>
+    <div class="chat-footer">
+        <input type="text" id="user-input" placeholder="Type your question here...">
+        <button onclick="sendMessage()">➤</button>
+    </div>
+</div>
 </html>
 
 
